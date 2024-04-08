@@ -23,7 +23,7 @@
     </div>
 
     <script src="https://www.gstatic.com/firebasejs/5.6.0/firebase.js"></script>
-
+    
     <script>
       // Initialize Firebase
       var config = {
@@ -37,19 +37,7 @@
       firebase.initializeApp(config);
 </script>
 
-<script>
-
-function loginUser(email, password) {
-    firebase.auth().signInWithEmailAndPassword(email, password)
-    .then(function (user) {
-      console.log('Credenciales correctas, ¡bienvenido! ' + user);
-      localStorage.setItem('user', JSON.stringify(user));
-    })
-    .catch(function (error) {
-      console.log(error);
-    });
-  }
-  </script>
+<script src="script.js"></script>
 
 </body>
 </html>
