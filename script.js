@@ -6,3 +6,4 @@ form.addEventListener('submit', function handleFormSubmit(event) {
     const email = form['email'].value;
     const password = form['password'].value;
 });
+
